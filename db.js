@@ -94,7 +94,7 @@ class Db {
   }
   getExpTime(login){
     return new Promise((resolve, reject) => {
-      this.db.each(`SELECT expTime FROM users WHERE login="${login}"`,
+      this.db.each(`SELECT expTime FROM users WHERE login = "${login}"`,
       (err, row) => {
           resolve(row.expTime);
       },
