@@ -36,7 +36,7 @@ class Db {
       fieldsStr += ')';
       chain = chain.then( _ => this.queryRun('CREATE TABLE IF NOT EXISTS ' + item + fieldsStr));
     }
-     chain = chain.then( _ => this.populateDb());
+    chain = chain.then( _ => this.populateDb());
     chain = chain.catch(err => console.log(err));
   }
   connect(){
