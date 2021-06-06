@@ -1,2 +1,2 @@
 # nodejsTest
-This test project for simple websocket chat 
+This is test project for simple websocket chat 
