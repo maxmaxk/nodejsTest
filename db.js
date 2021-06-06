@@ -43,9 +43,9 @@ class Db {
     return new Promise((resolve, reject) => {
       this.db = new sqlite3.Database(this.options.dbFile, (e) => {
         if(e){
-          reject(e)
+          reject(e);
         }else{
-          resolve()
+          resolve();
         };
       });
     });
