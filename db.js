@@ -42,7 +42,11 @@ class Db {
   connect(){
     return new Promise((resolve, reject) => {
       this.db = new sqlite3.Database(this.options.dbFile, (e) => {
-        if(e) { reject(e) } else { resolve() };
+        if(e){
+          reject(e)
+        }else{
+          resolve()
+        };
       });
     });
   }
