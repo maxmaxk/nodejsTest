@@ -1,0 +1,20 @@
+{
+  "name": "TestNodeJsProject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node main.js"
+  },
+  "keywords": [],
+  "author": "Max Kuleshov",
+  "license": "ISC",
+  "dependencies": {
+    "jwt-decode": "^3.1.2",
+    "jwt-encode": "^1.0.1",
+    "md5": "^2.3.0",
+    "sqlite3": "^5.0.2",
+    "ws": "^7.4.6"
+  }
+}
